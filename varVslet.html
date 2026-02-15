@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // var
+      // es6 let and const
+
+      // single line comment // group of lines /* add lines */
+
+      const coursePrice = 100; // decalare a constant variable => initialized
+      // coursePrice = 200; // re-assignment not allowed
+      console.log("Course Price with var:", coursePrice);
+
+      // var age = 25; // global scope
+      // var age = 26; // re-assignment allowed with var
+      let name3 = "John"; // block scope
+      // let name3 = "Jane"; // re-assignment allowed with let
+
+      var age = 26; // redeclaration allowed with var
+      // let name3 = "Doe";
+      localScope();
+      console.log(age, name3);
+
+      function localScope() {
+        // function scope
+        let name3 = "test";
+        age = 30; //
+        const pi = 3.14;
+        console.log(age, name3);
+      }
+    </script>
+  </head>
+  <body>
+    <script></script>
+  </body>
+</html>

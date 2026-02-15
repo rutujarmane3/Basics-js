@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controlled STMT advance</title>
+    <script>
+      // loop for string
+      const name = "Niranjan Patil"; // character => index
+      // const nameArr = name.split("")
+      // console.log(nameArr);
+      for (let i of name) {
+        // console.log(i);
+      }
+
+      // loop for object
+      const names = {
+        name1: "Niranjan",
+        name2: "Sanket",
+      };
+      for (let i in names) {
+        console.log(i, names[i]);
+      }
+      // old code for obj looping
+      console.log("<===old way===>");
+      const keys = Object.keys(names);
+      for (let i = 0; i < keys.length; i++) {
+        console.log(keys[i], names[keys[i]]);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
