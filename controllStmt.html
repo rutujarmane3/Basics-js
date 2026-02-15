@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controlled STMT</title>
+    <script>
+      // type 1 => Conditional,  type 2=> Looping
+
+      // const isFemale = true
+      // if ( condition ) {} => if(isFemale) { price = price - 200}
+
+      // type 1 => Conditional, ways => if, if.. else, else if, switch => 35%. 40%, 80%
+
+      const isFemale = true;
+      const isAdult = true;
+      let discount = 0;
+      if (isFemale) {
+        discount = 200;
+        console.log("You got discount of:", discount);
+      } else if (!isAdult) { // ! => not
+        discount = 100;
+        console.log("You got discount of:", discount);
+      } else {
+        console.log("No discount available");
+      }
+
+      // type 2 => Looping, ways => for, while, do.. while
+    </script>
+  </head>
+  <body>
+    <script></script>
+  </body>
+</html>

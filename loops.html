@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controlled STMT</title>
+    <script>
+      // type 1 => Conditional,  type 2=> Looping
+      // Looping => for, while, do.. while
+      // for (initialization; condition; increment/decrement) { code to be executed }
+
+      // ++i vs i++
+      // < vs > vs <= vs >=
+      for (let i = 1; i <= 5; i++) {
+        console.log(i);
+        console.log("printed");
+        break; // exits loop entirely
+        console.log("not printed");
+        console.log(test)
+      }
+      for (let i = 5; i > 0; i--) {
+        // 5,4,3,2,1
+        if (i == 3) {
+          continue; // skips
+        }
+        console.log(i);
+      }
+
+      // while (condition) { code to be executed }
+      // console.log("While Loop");
+      let i = 1;
+      while (i <= 5) {
+        // console.log(i);
+        i++;
+      }
+
+      // do... while
+      // console.log("DO While Loop");
+      let j = 1;
+      do {
+        // console.log(j);
+        j++;
+      } while (j <= 5);
+
+      // old for loop for array
+      console.log("old For Loop");
+      const students = [
+        "vishal",
+        "shubham",
+        "Ashok",
+        "Keshav",
+        "sanket",
+        "akansha",
+      ];
+      for (let i = 0; i < students.length; i++) {
+        console.log(students[i]);
+      }
+      // ec6 for in
+      console.log("<======for in loop======>");
+      for (let i in students) {
+        // index => number
+        console.log(students[i]);
+        // if(students[i] === "Keshav") {
+        //   console.log("Keshav number is ", i);
+        // }
+      }
+
+      // ec6 for of
+      console.log("<======for of loop======>");
+      for (let stu of students) {
+        console.log(stu);
+      }
+
+      // ec5 forEach => Array.forEach
+      console.log("<======for of loop======>");
+      students.forEach((value, index) => {
+        console.log(index, value);
+      });
+
+      // return use
+      const indexStudents = students.map((value, index) => {
+        return value;
+      });
+      console.log("index of students", indexStudents);
+    </script>
+  </head>
+  <body>
+    <script></script>
+  </body>
+</html>
